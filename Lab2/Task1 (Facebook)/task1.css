@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(239, 239, 239);
+    padding: 0;
+}  
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    max-width: 60%;
+    margin-top: 150px;
+    margin-bottom: 200px;
+}
+
+.text {
+    width: 50%;
+}
+
+.text h1{
+    color: rgb(0, 85, 255);
+    font-size: 6em;
+}
+
+.text p{
+    font-size: 3em;
+    margin: 0;
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.form{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 400px;
+    height: 100%;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+
+
+#email, #password{
+    border: 1px solid rgba(0, 0, 0, 0.15); 
+    border-radius: 10px;
+    width: 100%;
+    padding: 14px 16px;
+    margin: 5px 0;
+    font-size: 17px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #1877f2;
+    box-shadow: 0 0 0 1px rgba(24, 119, 242, 0.2);
+}
+
+input::placeholder {
+    color: #8a8d91;
+}
+
+.login_button {
+    background-color: rgb(0, 85, 255);
+    border: 1px solid rgb(0,0,0,0.15);
+    border-radius: 10px;
+    width: 100%;
+    margin: 15px 0;
+    padding: 12.5px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.login_button:hover {
+    background-color: rgb(25, 102, 255);
+    cursor: pointer;
+}
+
+#forgot_password {
+    text-align: center;
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+#forgot_password:hover {
+    text-decoration: underline;
+}
+
+.create_button {
+    background-color: rgb(0, 193, 77);
+    border: 1px solid;
+    border-radius: 10px;
+    width: 62%;
+    margin: 15px 0;
+    padding: 12.5px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.create_button:hover {
+    background-color: rgb(0, 170, 68);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgb(210, 210, 210);
+    width: 100%;
+}
+
+.login p {
+    font-size: 1.5em;
+}
+
+.login p a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login p a:hover {
+    text-decoration: underline;
+}
+
+
+
+footer {
+    background-color: white;
+    padding: 20px 0;
+    margin-top: auto;
+
+}
+
+.footer-content{
+    width: 100%;
+    padding: 10px 13%;
+}
+
+.languages{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-size: 1.25em;
+}
+
+.languages a{
+    text-decoration: none;
+    color: gray;
+}
+.languages a:hover {
+    text-decoration: underline;
+}
+
+.more-languages{
+    background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(188, 188, 188);
+    color: rgb(129, 129, 129);
+    font-size: 16px;
+    font-weight: bold;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.more-languages:hover {
+    background-color: rgb(224, 224, 224);
+}
+
+.footer-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 1.25em;
+    margin-top: 8px;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: gray;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.copyright{
+    color: gray;
+    margin-top: 20px;
+}

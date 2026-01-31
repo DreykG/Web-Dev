@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'SamsungSharpSans', sans-serif;
+    font-size: 16px;
+    display: flex;;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(14, 13, 15);
+    width: 100%;
+    
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    align-self: stretch;
+    
+
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(14, 13, 15);
+    width: 55%;
+    height: 700px;
+}
+
+#logo {
+    margin: 50px;
+    margin-bottom: 30px;
+    width: 100px;
+    height: auto
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(14, 13, 15);
+    color: white;
+    gap: 10px;
+}
+
+#gradient_text {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    -webkit-text-fill-color: transparent;   /* Текст становится прозрачным */
+
+    -webkit-background-clip: text;
+    background-clip: text;                  /* Обрезает фон по тексту */
+}
+
+#stories {
+    width: 450px;
+    height: auto;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    padding: 50px;
+    width: 45%;
+
+    background-color: rgb(34, 30, 37);
+    border-left: 3px solid rgb(77, 77, 77);
+}
+
+.login h3 {
+    color: white;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 18px 20px;
+    border-radius: 15px;
+    background-color: rgb(34, 30, 37);
+    font-size: 18px;
+    border: 1px solid rgb(56, 56, 56);
+    color: white
+}
+
+input:hover {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+#email {
+    margin-top: 20px;
+}
+#password {
+    margin-top: 10px;
+}
+
+#LogIn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(27, 27, 255);
+    border: 1px solid gray;
+
+    border-radius: 40px;
+    color: white
+}
+
+#LogIn:disabled {
+    background-color: rgb(26, 26, 163);
+    color: rgb(163, 163, 163)
+}
+
+#forgot_password{
+    margin: 10px;
+    width: 100%;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(34, 30, 37);             /*Сделать как фон */
+    border: none;
+
+    border-radius: 40px;
+    color: white
+}
+
+#forgot_password:hover {
+    background-color: rgb(51, 47, 55);
+    cursor: pointer;
+}
+
+
+#login_facebook{
+    margin-top: 50px;
+    width: 100%;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(34, 30, 37);             /*Сделать как фон */
+    border: 1px solid gray;
+
+    border-radius: 40px;
+    color: white
+}
+#login_facebook:hover {
+    background-color: rgb(51, 47, 55);
+    cursor: pointer;
+}
+
+#fb_icon{
+    width: 15px;
+    height: auto;
+    margin-top: 2px;
+    margin-right: 10px;
+}
+
+#create_acc{
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgb(34, 30, 37);              /*Сделать как фон */
+    border: 1px solid rgb(134, 106, 236);
+    border-radius: 40px;
+    color: rgb(134, 106, 236);
+}
+
+#create_acc:hover {
+    background-color: rgb(51, 47, 55);
+    cursor: pointer;
+}
+
+
+#meta_logo {
+    width: 60px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+
+footer {
+    border-top: 3px solid rgb(77, 77, 77);
+    width: 100%; 
+}
+
+footer a{
+    color: gray;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.foot_info{
+    
+    padding-top: 30px;
+    display: flex;;
+    justify-content: center;
+    gap:10px;
+    font-size: 12px;
+}
+
+.lng_cpr{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    font-size: 12px;
+}
+
+.language-select{
+    background: transparent;
+    font-size: 12px;
+    border: none;
+    color: gray;
+    display: inline-block;
+
+}
+
+
+
+.cpr{
+    color: gray;
+}
