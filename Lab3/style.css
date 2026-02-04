@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 40px;
+    height: auto;
+}
+img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+body{
+    font-family: cursive;
+    font-size: 16px;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(96, 207, 255);
+    height: 80px;
+    padding-left: 50px;
+    
+}
+
+header h2{
+    font-size: 2.5em;
+}
+
+.container{
+    background-color: rgb(194, 237, 255);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    padding: 20px;
+}
+
+.container h1 {
+    font-size: 2em;
+    margin: 20px 0;   
+}
+
+.ipt{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 30px;
+    margin: 0 auto;
+}
+
+#input_task {
+    width: 80%;
+    margin: 0 30px;
+    padding: 16px 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(199, 199, 199);
+}
+
+#add_task {
+    width: 15%;
+    color: white;
+    background-color: rgb(22, 69, 255);
+    border-radius: 10px;
+    border: 1px solid rgb(199, 199, 199);
+}
+#add_task:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+ul{
+    list-style: none;
+    /* background-color: greenyellow; */
+    width: 90%;
+    margin-top: 30px;
+}
+
+li{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin: auto;
+    margin-bottom: 10px;
+    /* outline: 1px solid rgb(124, 124, 124); */
+    border-radius: 30px;
+    border: 5px solid rgb(255, 255, 255);
+    word-break: break-word; /* Этот атрибут позволяет разделять и переносить текст на новую строку, если он не помещается в длину контейнера*/
+}
+
+label{
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+    flex: 1;
+
+}
+
+.done_task{
+    transform: scale(1.2);
+}
+
+.done_task:hover{
+    transform: scale(1.5);
+}
+.done_task:checked + label {
+    text-decoration: line-through;
+}
