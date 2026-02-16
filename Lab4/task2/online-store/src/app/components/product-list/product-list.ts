@@ -1,0 +1,116 @@
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ProductCard } from '../product-card/product-card';
+import { Product } from '../../models/product.model';
+
+@Component({
+  selector: 'app-product-list',
+  standalone: true,
+  imports: [CommonModule, ProductCard],
+  templateUrl: './product-list.html',
+  styleUrls: ['./product-list.css']
+})
+export class ProductList {
+  products: Product[] = [
+    {
+      id: 1,
+      name: 'Apple iPhone 15 Pro 256Gb (серый)',
+      description: 'Флагманский iPhone на A17 Pro с титановым корпусом. Отличный дисплей и камеры для фото/видео каждый день.',
+      price: 669300,
+      rating: 4.9,
+      image: 'assets/images/1.jpg',
+      images: [],
+      link: 'https://kaspi.kz/shop/p/apple-iphone-15-pro-256gb-seryi-113138213/',
+    },
+    {
+      id: 2,
+      name: 'Samsung Galaxy S24 Ultra 5G 12/256 (черный)',
+      description: 'Премиальный Android-флагман с мощным процессором и отличной камерой. Подходит для фото, работы и игр.',
+      price: 505000,
+      rating: 4.9,
+      image: 'assets/images/2.jpg',
+      images: [],
+      link: 'https://kaspi.kz/shop/p/samsung-galaxy-s24-ultra-5g-12-gb-256-gb-chernyi-116044354/',
+    },
+    {
+      id: 3,
+      name: 'Xiaomi Redmi Note 13 Pro+ 5G NFC 16/512 (черный)',
+      description: 'Смартфон с AMOLED-экраном и быстрой работой. Хороший вариант по соотношению цена/возможности.',
+      price: 285000,
+      rating: 4.8,
+      image: 'assets/images/3.jpg',
+      images: [],
+      link: 'https://kaspi.kz/shop/p/xiaomi-redmi-note-13-pro-5g-nfc-16-gb-512-gb-chernyi-118366848/',
+    },
+    {
+      id: 4,
+      name: 'Apple AirPods Pro 2nd generation (белый)',
+      description: 'Наушники с активным шумоподавлением и качественным звуком. Удобны для работы, спорта и звонков.',
+      price: 175000,
+      rating: 4.8,
+      image: 'assets/images/4.jpg',
+      images: [],
+      link: 'https://kaspi.kz/shop/p/naushniki-apple-airpods-pro-2nd-generation-belyi-106362968/',
+    },
+    {
+      id: 5,
+      name: 'Sony PlayStation 5 Slim',
+      description: 'Игровая приставка нового поколения в компактном корпусе. Поддержка 4K и быстрые загрузки.',
+      price: 345500,
+      rating: 4.9,
+      image: "assets/images/5.jpg",
+      images: [],
+      link: 'https://kaspi.kz/shop/p/sony-playstation-5-slim-114696098/',
+    },
+    {
+      id: 6,
+      name: 'Dyson V15 Detect Absolute (серебристый)',
+      description: 'Мощный вертикальный пылесос для быстрой уборки дома. Несколько режимов и удобные насадки.',
+      price: 189999,
+      rating: 4.9,
+      image: 'assets/images/6.jpg',
+      images: [],
+      link: 'https://kaspi.kz/shop/p/dyson-v15-detect-absolute-serebristyi-102269286/',
+    },
+    {
+      id: 7,
+      name: 'Xiaomi Mi Robot Vacuum-Mop 1C (белый)',
+      description: 'Робот-пылесос для сухой и влажной уборки. Управление со смартфона и базовые датчики навигации.',
+      price: 184500,
+      rating: 4.7,
+      image: 'assets/images/7.jpg',
+      images: [],
+      link: 'https://kaspi.kz/shop/p/xiaomi-mi-robot-vacuum-mop-1c-belyi-102905145/',
+    },
+    {
+      id: 8,
+      name: 'Телевизор Samsung UE55DU8000UXCE 55" (черный)',
+      description: '4K телевизор с Smart TV. Подходит для фильмов, YouTube и приставок.',
+      price: 960700,
+      rating: 4.8,
+      image: 'assets/images/8.jpg',
+      images: [],
+      link: 'https://kaspi.kz/shop/p/samsung-ue55du8000uxce-140-sm-chernyi-119247854/',
+    },
+    {
+      id: 9,
+      name: 'Apple Watch Series 9 GPS 45mm (синий-черный)',
+      description: 'Смарт-часы для здоровья, тренировок и уведомлений. Удобная интеграция с iPhone.',
+      price: 142450,
+      rating: 4.8,
+      image: 'assets/images/9.jpg',
+      images: [],
+      link: 'https://kaspi.kz/shop/p/apple-watch-series-9-gps-m-l-45-mm-sinii-chernyi-113398437/',
+    },
+    {
+      id: 10,
+      name: 'Logitech MX Master 3S (черный)',
+      description: 'Эргономичная мышь для работы и продуктивности. Точная прокрутка и удобная форма.',
+      price: 45600,
+      rating: 4.9,
+      image: 'assets/images/10.jpg',
+      images: [],
+      link: 'https://kaspi.kz/shop/p/logitech-mx-master-3s-910-006559-chernyi-106172365/',
+    },
+  ];
+}
