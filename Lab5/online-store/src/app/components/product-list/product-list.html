@@ -1,0 +1,20 @@
+<div class="container">
+  <div *ngIf="hasProducts(); else noProducts">
+    <div class="products-grid">
+      @for (product of products(); track product.id) {
+        <app-product-item
+          [product]="product"
+          (like)="onLike($event)"
+          (delete)="onDelete($event)"
+        />
+      }
+    </div>
+  </div>
+  
+  <ng-template #noProducts>
+    <div class="no-products">
+      <h2>В этой категории нет товаров</h2>
+      <p>Выберите другую категорию или вернитесь позже</p>
+    </div>
+  </ng-template>
+</div>

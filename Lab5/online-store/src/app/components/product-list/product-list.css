@@ -1,0 +1,25 @@
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(255, 165, 165);
+  border-radius: 30px;
+  padding-bottom: 40px;
+}
+
+.page-title{
+  text-align: center;
+  margin: 20px auto;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 3em;
+  background-color: red;
+  border-radius: 10px;
+  width: 600px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}

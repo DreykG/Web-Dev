@@ -1,0 +1,43 @@
+
+<main class="app-main">
+
+
+  <header class="app-header">
+    <h1>🛒 Kaspi.kz Product Catalog</h1>
+    <p>Выберите категорию для просмотра товаров</p>
+  </header>
+
+
+
+  <div class="categories-container">
+    <h2>Категории</h2>
+    <div class="categories-grid">
+      @for (category of categories; track category.id) {
+        <button 
+          class="category-card"
+          [class.selected]="isSelected(category.id)"
+          (click)="selectCategory(category.id)">
+
+          <span class="category-icon">{{ category.icon }}</span>
+          <span class="category-name">{{ category.name }}</span>
+        </button>
+      }
+    </div>
+  </div>
+
+  <div class="content-container">
+    @if (selectedCategoryId) {
+      <!-- Товары выбранной категории -->
+      <app-product-list
+        [products]="getFilteredProducts()"
+        (likeProduct)="onLike($event)"
+        (deleteProduct)="onDelete($event)"
+      />
+    } @else {
+      <div class="welcome-message">
+        <h2>👋 Добро пожаловать!</h2>
+        <p>Выберите категорию, чтобы увидеть товары</p>
+      </div>
+    }
+  </div>
+</main>
