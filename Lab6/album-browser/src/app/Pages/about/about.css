@@ -1,0 +1,18 @@
+.about{
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(255, 205, 205);
+}
+
+h1{
+    margin-bottom: 10px;
+    color: rgb(186, 60, 60);
+}
+
+b{
+    color: rgb(122, 0, 0);
+}
+
+p{
+    color: rgb(186, 60, 60);
+}

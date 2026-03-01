@@ -1,0 +1,36 @@
+.album-item {
+    display: flex;
+    justify-content: space-between; /* Распределяет пространство между элементами */
+    align-items: center; /* Выравнивает элементы по вертикали по центру */
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    list-style: none;
+    background-color: rgb(255, 205, 205);
+}
+
+.album-item:hover {
+    background-color: #ffcdcd;
+}
+
+.album-item a {
+    flex: 1;
+    text-decoration: none;
+    color: #bb0000;
+    margin-right: 15px; /* Отступ от кнопки */
+}
+
+.album-item button {
+    padding: 5px 15px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* white-space: nowrap; Запрещает перенос текста кнопки */
+}
+
+.album-item button:hover {
+    background-color: #c82333;
+}
